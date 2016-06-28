@@ -1,0 +1,7 @@
+
+1.
+g++ -c -fPIC SO_TEST.cpp -o 2.o
+
+
+2.
+g++ -shared -Wl,-soname,2.so -o 2.so  2.o
